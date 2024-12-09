@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato</title>
+</head>
+<body>
+    <section class="contato">   
+        <!-- Contêiner para o formulário e a imagem -->
+        <div class="contato-container">
+            <h1>VivaEdu</h1>
+            <!-- Formulário -->
+            <form action="" method="post">
+                <h3>Fale Conosco</h3>
+                <input type="name" placeholder="Digite seu nome" required maxlength="50" class="form-name">
+                <input type="email" placeholder="Digite seu email" required maxlength="50" class="form-email">
+                <input type="tel" placeholder="(81) 98765-4321" required pattern="\(\d{2}\) \d{5}-\d{4}">
+                <textarea name="msg" class="text-area" placeholder="Digite sua mensagem" required maxlength="1000" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar mensagem" class="form-submit" name="submit">
+            </form>
+
+            <!-- Imagem -->
+            <div class="imagem-container">
+                <img src="contact-img.png" alt="moça-suporte" class="imagem">
+            </div>
+        </div>
+
+        <!-- Ícones de contato -->
+        <div class="box-container">
+            <div class="box">
+                <i class='bx bxs-phone-call'></i>
+                <h3>Número Telefônico</h3>
+                <a href="12345678">(81)94002-8922</a>
+                <a href="12345678">(81)92469-2424</a>
+            </div>
+            
+            <div class="box">
+                <i class='bx bxs-envelope'></i>
+                <h3>Email</h3>
+                <a href="email:VivaEdu@gmail.com">VivaEdu@gmail.com</a>
+                <a href="email:VivaEduCad@gmail.com">VivaEduCad@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h3>Endereço</h3>
+                <a href="#">Rua Roselândia, apartamento 5, bloco c - 40028922</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Seção de contato */
+.contato {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container flex para o formulário e imagem lado a lado */
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Espaço entre o formulário e a imagem */
+    position: relative;
+}
+
+/* Estilo do formulário */
+form {
+    flex: 1;  /* O formulário ocupará metade do espaço disponível */
+    margin-top: 60px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #5c7bff;
+    outline: none;
+}
+
+.form-submit {
+    background-color: #5c7bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-submit:hover {
+    background-color: #4a66e1;
+}
+
+/* Estilo para a imagem */
+.imagem-container {
+    flex: 1;  /* A imagem ocupa a outra metade do espaço */
+}
+
+.imagem {
+    width: 100%;  /* A imagem ocupa toda a largura do container */
+    height: auto;  /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+/* Container para os ícones de contato */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Caixa de contato individual */
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos ícones */
+.box i {
+    font-size: 40px;
+    color: #5c7bff;
+    margin-bottom: 10px;
+}
+
+/* Títulos dentro das caixas */
+.box h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Links dentro das caixas */
+.box a {
+    color: #5c7bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para telas menores */
+@media screen and (max-width: 768px) {
+    .contato-container {
+        flex-direction: column;  /* Empilha o formulário e a imagem em dispositivos menores */
+    }
+
+    .box-container {
+        flex-direction: column;  /* Empilha os ícones de contato */
+    }
+}
+
+.contato-container h3 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contato-container h1 {
+    position: absolute;  /* Posiciona o título de forma absoluta dentro do contêiner */
+    top: 0;  /* Alinha o título ao topo */
+    left: 0;  /* Alinha o título à esquerda */
+    margin: 0;  /* Remove qualquer margem padrão */
+    font-size: 2.5rem;  /* Ajuste de tamanho de fonte, se necessário */
+    color: #5c7bff;  /* Definir cor para combinar com o esquema */
+}
+   
